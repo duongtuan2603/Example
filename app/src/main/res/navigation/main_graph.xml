@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/createPackageFragment">
+
+    <fragment
+        android:id="@+id/createPackageFragment"
+        android:name="com.example.scanning.CreatePackageFragment"
+        tools:layout="@layout/fragment_create_package"
+        android:label="CreatePackageFragment" />
+    <fragment
+        android:id="@+id/barcodeScanningFragment"
+        android:name="com.example.scanning.BarcodeScanningFragment"
+        tools:layout="@layout/fragment_scan_barcode"
+        android:label="BarcodeScanningFragment" />
+    <fragment
+        android:id="@+id/editInfoFragment"
+        android:name="com.example.scanning.EditInfoFragment"
+        tools:layout="@layout/fragment_edit_info"
+        android:label="EditInfoFragment" />
+    <fragment
+        android:id="@+id/uploadPhotoFragment"
+        android:name="com.example.scanning.utils.UploadPhotoFragment"
+        tools:layout="@layout/fragment_upload_photo"
+        android:label="UploadPhotoFragment" />
+</navigation>
